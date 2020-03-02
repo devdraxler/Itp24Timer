@@ -1,2 +1,1 @@
-# Itp24Timer
- Timer class written in php
+Itp24Timer
