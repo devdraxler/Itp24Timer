@@ -1,4 +1,4 @@
-<?
+<?php
 	class itp24Timer{
 
 		private static $config = Array('unit'=>'seconds','decimals'=>2,'separator'=>'.','thousandsSeparator'=>' ','language'=>'en');
