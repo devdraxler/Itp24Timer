@@ -1,9 +1,15 @@
-<?php
+<?
 	class itp24Timer{
-
-		private static $config = Array('unit'=>'seconds','decimals'=>2,'separator'=>'.','thousandsSeparator'=>' ','language'=>'en');
-
+	
 		private static $table = Array();
+		
+		private static $config = Array(
+			'unit'=>'seconds',
+			'decimals'=>2,
+			'separator'=>'.',
+			'thousandsSeparator'=>' ',
+			'language'=>'en'
+		);
 
 		private static $lang = Array(
 			'all' => Array('nbsp'=>'&nbsp;'),
@@ -25,7 +31,6 @@
 		private static function check($t,$v){
 			if($t == 'array')
 				if(!is_array($v)||!sizeOf($v))
-					if(!is_array($v)||!sizeOf($v))
 						throw new Exception(self::$lang[self::$config['language']]['noArray']);
 		}
 		
